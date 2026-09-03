@@ -1,0 +1,19 @@
+application:
+  subdomain: omnivoice-studio
+  upstreams:
+    - location: /
+      backend: http://omnivoice:3900/
+  public_path:
+    - /
+
+services:
+  omnivoice:
+    # upstream: docker.io/palashdeb/omnivoice-studio:0.5.1
+    image: docker.1ms.run/palashdeb/omnivoice-studio:0.5.1
+    environment:
+      - OMNIVOICE_API_KEY={{ .U.omnivoice_api_key }}
+    binds:
+      - /lzcapp/var/omnivoice-data:/app/omnivoice_data
+      - /lzcapp/cache/huggingface:/root/.cache/huggingface
+
+usage: "首次启动可能需要下载模型，具体耗时取决于网络和所选模型。所有语音、项目和输出数据均保存在应用私有数据目录中。"

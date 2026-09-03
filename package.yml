@@ -1,0 +1,18 @@
+package: community.lazycat.app.omnivoice-studio
+version: 0.5.1
+name: VoiceStudio
+description: "Open-source, fully local voice cloning, voice design, video dubbing, dictation, transcription, and audiobook creation in 646 languages."
+author: debpalash
+license: AGPL-3.0
+homepage: https://github.com/debpalash/VoiceStudio
+min_os_version: 1.5.0
+permissions:
+  required:
+    - net.internet
+locales:
+  zh:
+    name: VoiceStudio
+    description: "开源、完全本地运行的语音工作室，支持 646 种语言的声音克隆、声音设计、视频配音、听写、转录和有声书制作。"
+  en:
+    name: VoiceStudio
+    description: "Open-source, fully local voice cloning, voice design, video dubbing, dictation, transcription, and audiobook creation in 646 languages."

@@ -1,0 +1,16 @@
+params:
+  - id: omnivoice_api_key
+    type: secret
+    name: OmniVoice API Key
+    description: "API key used to protect VoiceStudio server-mode settings, diagnostics, and administrative operations. Use a long random value."
+    optional: false
+
+locales:
+  zh:
+    omnivoice_api_key:
+      name: OmniVoice API 密钥
+      description: "用于保护 VoiceStudio 服务端设置、诊断和管理操作。请填写较长的随机值。"
+  en:
+    omnivoice_api_key:
+      name: OmniVoice API Key
+      description: "API key used to protect VoiceStudio server-mode settings, diagnostics, and administrative operations. Use a long random value."
