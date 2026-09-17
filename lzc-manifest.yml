@@ -7,8 +7,8 @@ application:
     - /
 services:
   omnivoice:
-    # upstream: docker.io/palashdeb/omnivoice-studio:0.5.2
-    image: docker.1ms.run/palashdeb/omnivoice-studio:0.5.2
+    # upstream: docker.io/palashdeb/omnivoice-studio:0.5.3
+    image: docker.1ms.run/palashdeb/omnivoice-studio:0.5.3
     environment:
       - OMNIVOICE_API_KEY={{ .U.omnivoice_api_key }}
     binds:
